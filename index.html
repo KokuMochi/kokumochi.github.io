@@ -5,36 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kokumochi</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
         body { 
-            font-family: sans-serif; 
+            font-family: 'Fredoka One', sans-serif; 
             text-align: center; 
-            padding: 40px; 
-            line-height: 1.6; 
-            background-color: #f9d6d7; /* Twój kolor tła */
             margin: 0;
+            padding: 0;
+            background-color: #f9d6d7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #4a4a4a; 
         }
-        .logo-container { margin-bottom: 20px; }
+        .logo-container { 
+            padding: 40px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
         .logo-container img {
-            max-width: 300px; /* Logo będzie miało maksymalnie 300px szerokości */
+            max-width: 300px; 
             height: auto;
         }
         .content { 
             max-width: 600px; 
-            margin: 0 auto; 
-            background-color: white; /* Białe tło pod tekstem dla czytelności */
-            padding: 20px;
-            border-radius: 15px;
+            width: 90%; 
+            background-color: white; 
+            padding: 40px 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-sizing: border-box;
+            text-align: center;
         }
+        /* Zmiana koloru nagłówków na #e7460f */
+        h2, h3 { 
+            color: #e7460f; 
+            margin-top: 30px; 
+        }
+        h3 { font-size: 1.2em; } 
+        p { line-height: 1.8; margin-bottom: 25px; } 
     </style>
 </head>
 <body>
+    <div class="logo-container">
+        <img src="Background.png" alt="Kokumochi Logo">
+    </div>
+
     <div class="content">
-        <div class="logo-container">
-            <img src="Background.png" alt="Kokumochi Logo">
-        </div>
-        
         <h2>Manifest</h2>
-        <p>Tutaj wstawimy Wasz manifest.</p>
+        <h3>More Than Just Prints – Building a Dream with My Daughter</h3>
+        <p>It all started with a simple request from my 10-year-old daughter: "Dad, design something really cool." When I saw the joy on her face when the first model came to life, I realized this isn't just about plastic – it's about pure fun. That’s how our family team was born: our daughter is the mastermind behind the ideas, I handle the mechanics to ensure every clicker works perfectly, and my wife adds the soul by hand-painting every detail.</p>
+
+        <h3>Why do we do this, and why for free?</h3>
+        <p>Because we believe in the power of sharing joy. Our clickers aren’t just "projects for a drawer." This is a growing system – animals in ice cream, cupcakes, and hundreds of combinations that pop into our heads faster than we can print them. We want you to use them, play with them, and get as much energy from them as we do.</p>
 
         <h2>Oficjalni vendorzy</h2>
         <p>Jeżeli nie widzisz tutaj swojego vendora albo jeżeli jesteś vendorem, który nas wspiera, ale nie widzisz tutaj siebie, to proszę napisz do nas na kontakt@kokumochi.com, a zaktualizujemy listę.</p>
