@@ -1,67 +1,278 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
+
 <html lang="pl">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Kokumochi</title>
+
     <style>
+
         @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+
+
         body { 
+
             font-family: 'Fredoka One', sans-serif; 
+
             text-align: center; 
+
             margin: 0;
+
             padding: 0;
+
             background-color: #f9d6d7;
+
             display: flex;
+
             flex-direction: column;
+
             align-items: center;
+
             color: #4a4a4a; 
+
         }
-        .logo-container { 
-            padding: 40px 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
+
+        #container-3d { 
+
+            width: 100%; 
+
+            height: 250px; 
+
+            cursor: pointer; 
+
+            display: block; 
+
         }
-        .logo-container img {
-            max-width: 300px; 
-            height: auto;
-        }
+
+        .logo-container { padding: 0; margin: 0; width: 100%; display: flex; justify-content: center; }
+
+        .logo-container img { max-width: 200px; height: auto; }
+
         .content { 
-            max-width: 600px; 
-            width: 90%; 
-            background-color: white; 
-            padding: 40px 20px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            box-sizing: border-box;
-            text-align: center;
+
+            max-width: 600px; width: 90%; background-color: white; padding: 20px;
+
+            border-top-left-radius: 20px; border-top-right-radius: 20px;
+
+            box-sizing: border-box; text-align: center; margin-top: 10px;
+
         }
-        /* Zmiana koloru nagłówków na #e7460f */
-        h2, h3 { 
-            color: #e7460f; 
-            margin-top: 30px; 
-        }
-        h3 { font-size: 1.2em; } 
+
+        h2 { color: #4a4a4a; font-size: 2.5em; margin-top: 5px; margin-bottom: 20px; }
+
+        h3 { color: #e7460f; font-size: 1.5em; margin-top: 25px; margin-bottom: 15px; } 
+
         p { line-height: 1.8; margin-bottom: 25px; } 
+
     </style>
+
+    <script type="importmap">
+
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/" } }
+
+    </script>
+
 </head>
+
 <body>
+
+
+
+    <div id="container-3d"></div>
+
+
+
     <div class="logo-container">
+
         <img src="Background.png" alt="Kokumochi Logo">
+
     </div>
+
+
 
     <div class="content">
-        <h2>Manifest</h2>
-        <h3>More Than Just Prints – Building a Dream with My Daughter</h3>
-        <p>It all started with a simple request from my 10-year-old daughter: "Dad, design something really cool." When I saw the joy on her face when the first model came to life, I realized this isn't just about plastic – it's about pure fun. That’s how our family team was born: our daughter is the mastermind behind the ideas, I handle the mechanics to ensure every clicker works perfectly, and my wife adds the soul by hand-painting every detail.</p>
 
-        <h3>Why do we do this, and why for free?</h3>
-        <p>Because we believe in the power of sharing joy. Our clickers aren’t just "projects for a drawer." This is a growing system – animals in ice cream, cupcakes, and hundreds of combinations that pop into our heads faster than we can print them. We want you to use them, play with them, and get as much energy from them as we do.</p>
+        <h2>Our Manifest</h2>
 
-        <h2>Oficjalni vendorzy</h2>
-        <p>Jeżeli nie widzisz tutaj swojego vendora albo jeżeli jesteś vendorem, który nas wspiera, ale nie widzisz tutaj siebie, to proszę napisz do nas na kontakt@kokumochi.com, a zaktualizujemy listę.</p>
+        <h3>❤️ More Than Just Prints – Building a Dream with My Daughter</h3>
+
+        <p>It all started with a simple request from my 10-year-old daughter. She drew her own creative ideas on paper and asked, "Dad, can you turn these into a clicker?" When I saw the joy on her face as I brought her sketches to life, I realized this isn't just about plastic – it's about pure fun.
+
+That’s how our family team was born: our daughter is the mastermind behind the ideas, I handle the mechanics to ensure every clicker works perfectly, and my wife adds the soul by hand-painting every detail.</p>
+
+	<img src="Studio.png">
+
+        <h3>🆓Why do we do this, and why for free?</h3>
+
+        <p>Because we believe in the power of sharing joy. Our clickers aren’t just "projects for a drawer." We want you to use them and play with them!</p>
+
+
+        <h3>🎯 Our Goal: An AMS for our daughter</h3>
+
+        <p>We won't hide it – we have a dream. Every dollar of your support goes directly toward buying an Automatic Material System (AMS). With it, our daughter will be able to print her visions in full color, and my wife's brushes will finally get a well-deserved rest. We’re building this together.</p>
+
+
+        <h3>💡 To Sellers and Businesses – A Manifest of Integrity</h3>
+
+        <p>Listen, in a world full of restrictions and lawyers, we choose a different path. There is no "3D printing police" here. You have complete freedom to print, test, and sell these designs to grow your own business.
+
+I put my faith directly in your conscience and human honor. If our projects bring success and profit to your shop, I ask you simply, human to human: share what you can. Support our Patreon. Help a hobbyist dad build something lasting for his daughter.
+
+You aren’t paying for files. You are buying a front-row seat on our journey. You are with us as new ideas are born, you see our passion turn into reality, and you are in the heart of this adventure. It’s your way to become part of what we create.
+
+Let's grow together, with mutual respect and a passion that cannot be measured.</p>
+
+
+
+        <h3>Official Partners</h3>
+
+    
+    <p>We believe in building together. If you are a vendor who supports our work, reach out to us at <strong>kokumochi3d@gmail.com</strong>, and we will proudly feature your shop right here!</p>
+    <p>Are you a creator looking to join? Let’s connect and grow our community.</p>
+</section>
+
+      
+
     </div>
+
+
+
+    <script type="module">
+
+        import * as THREE from 'three';
+
+        import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+
+
+        const HEIGHT = 380;
+
+        const container = document.getElementById('container-3d');
+
+        const scene = new THREE.Scene();
+
+        
+
+        const defaultCamera = new THREE.PerspectiveCamera(75, container.clientWidth / HEIGHT, 0.1, 1000);
+
+        defaultCamera.position.z = 2;
+
+
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+
+        renderer.setSize(container.clientWidth, HEIGHT);
+
+        container.appendChild(renderer.domElement);
+
+
+
+        scene.add(new THREE.AmbientLight(0xffffff, 2));
+
+        const dirLight = new THREE.DirectionalLight(0xffffff, 2);
+
+        dirLight.position.set(5, 5, 5);
+
+        scene.add(dirLight);
+
+
+
+        let mixer, action, loadedCamera, model;
+
+        const audio = new Audio('click.mp3');
+
+        const raycaster = new THREE.Raycaster();
+
+        const mouse = new THREE.Vector2();
+
+
+
+        const loader = new GLTFLoader();
+
+        loader.load('mis.glb', (gltf) => {
+
+            model = gltf.scene;
+
+            scene.add(model);
+
+            
+
+            if (gltf.cameras && gltf.cameras.length > 0) {
+
+                loadedCamera = gltf.cameras[0];
+
+                loadedCamera.aspect = container.clientWidth / HEIGHT;
+
+                loadedCamera.updateProjectionMatrix();
+
+            }
+
+            
+
+            mixer = new THREE.AnimationMixer(model);
+
+            action = mixer.clipAction(gltf.animations[0]);
+
+            action.setLoop(THREE.LoopOnce);
+
+            action.clampWhenFinished = true;
+
+        });
+
+
+
+        window.addEventListener('click', (event) => {
+
+            if (!model) return;
+
+            
+
+            const rect = container.getBoundingClientRect();
+
+            mouse.x = ((event.clientX - rect.left) / container.clientWidth) * 2 - 1;
+
+            mouse.y = -((event.clientY - rect.top) / HEIGHT) * 2 + 1;
+
+            
+
+            raycaster.setFromCamera(mouse, loadedCamera || defaultCamera);
+
+            const intersects = raycaster.intersectObject(model, true);
+
+
+
+            if (intersects.length > 0) {
+
+                if (action) { action.reset(); action.play(); audio.play(); }
+
+            }
+
+        });
+
+
+
+        const clock = new THREE.Clock();
+
+        function animate() {
+
+            requestAnimationFrame(animate);
+
+            if (mixer) mixer.update(clock.getDelta());
+
+            renderer.render(scene, loadedCamera || defaultCamera);
+
+        }
+
+        animate();
+
+    </script>
+
 </body>
+
 </html>
